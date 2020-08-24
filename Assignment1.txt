@@ -1,0 +1,16 @@
+Assignment
+/**
+		 * lottery no is in 4 digits
+		 * Program for lucky draw
+		 * 1st winner exact match
+		 * 2nd winner first 3digit of the no matches
+		 * 3rd winner any 2 digits matches
+		 * Scenario 
+		 * user enters the 4 digit lottery number
+		 * programs generates random 4 digit no and compares with the number provided by user 
+		 * and based on the comparison result winner category is decided
+		 * Output:
+		 * Please enter your 4 digit lottery Number.
+		 * 4525
+		 * yay!!!   you won 2nd prize !! 
+		 */
