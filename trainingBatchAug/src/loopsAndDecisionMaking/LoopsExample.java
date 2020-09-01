@@ -21,7 +21,7 @@ public class LoopsExample {
 		 * 4525
 		 * yay!!!   you won 2nd prize !! 
 		 */
-		int drawNumber =2525;//(int) (Math.random()*10000);
+		int drawNumber =(int) (Math.random()*10000);
 		System.out.println("Please enter your 4 digit lottery Number.");
 		Scanner input = new Scanner(System.in);
 		//input.processinte
@@ -35,6 +35,39 @@ public class LoopsExample {
 			System.out.println("you won 2nd prize!!");
 		}else if((drawNumber+"").contains(thirdPrizeCondition)) {
 			System.out.println("you won 3rd prize!!");
+		}else {
+			System.out.println("oops !! you did not won any price , better luck next time");
+			
+		}
+		int num=2;
+		
+		if(num%2==0)
+			System.out.println("Number is even");
+		else
+			System.out.println("No is odd");
+		System.out.println();
+		String dayOftheWeek ="Monay";
+		
+		if(dayOftheWeek.equalsIgnoreCase("monday")) {
+			System.out.println("Discount is 10%");
+		}else if(dayOftheWeek.equalsIgnoreCase("tudesday")) {
+			System.out.println("Discount is 15%");
+		}else {
+			System.out.println("Buy 2 get 1 free");
+		}
+		
+		switch (dayOftheWeek) {
+		case "Monday":
+			System.out.println("Discount is 10%");
+			break;
+			
+		case "Tudesday" :
+			System.out.println("Discount is 10%");
+			break;
+
+		default:
+			System.out.println("Buy 2 get 1 free");
+			break;
 		}
 
 	}

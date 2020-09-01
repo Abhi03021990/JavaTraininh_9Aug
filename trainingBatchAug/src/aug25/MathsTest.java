@@ -46,11 +46,25 @@ public class MathsTest {
 		System.out.println("Out of "+total_marks+" marks you got "+correctAnswer+" marks");
 		double percentage = ((double)correctAnswer/(double)total_marks)*100;
 		if(percentage>=40) {
+			
 			System.out.println("you got "+percentage+" % and passed the exam");
 		}else {
 			System.out.println("you got "+percentage+" % and failed the exam");
 		}
 		
+		if((percentage >= 40.0) && (percentage <= 60.0)) {
+			System.out.println("Grade C ");
+		}else if((percentage >= 60.0) && (percentage <= 80.0)) {
+			System.out.println("Grade B ");
+		}
+		else if((percentage >= 80.0) && (percentage <= 100.0)) {
+			System.out.println("Grade A ");
+		}else {
+			
+			System.out.println("Failed!! ");
+		}
+		
+	
 		
 
 	}
