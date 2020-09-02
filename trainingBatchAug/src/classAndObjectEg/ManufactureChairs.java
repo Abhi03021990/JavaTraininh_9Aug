@@ -28,6 +28,13 @@ package classAndObjectEg;
 		myNewChair.dispChairInfo();
 		mynewChair1.dispChairInfo();
 		
+		ChairWithGetterSetter chair1 = new ChairWithGetterSetter();
+		chair1.setCompanyName("ABCD");
+		chair1.setColour("Green");
+		//chair1.dispChairInfo();
+		System.out.println(chair1.getCompanyName());
+		System.out.println(chair1.getColour());
+		
 		
 		
 
