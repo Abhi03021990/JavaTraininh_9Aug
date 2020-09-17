@@ -1,4 +1,6 @@
-package methodOverriding;
+package patterns;
+
+import methodOverriding.Car;
 
 public class Ford {
 	public void drive() {
@@ -13,5 +15,13 @@ public class Ford {
 	public void disp2() {
 		 changeGear();
 	 }
+	
+	public static void main(String[] args) {
+		//Car c = new Ford();
+		Ford f = new Ford();
+		
+		
+		
+	}
 
 }

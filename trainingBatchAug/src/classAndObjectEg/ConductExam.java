@@ -13,7 +13,8 @@ public class ConductExam {
 		ConductExam conductExam = new ConductExam();
 		conductExam.setExamdetails();
 		conductExam.displayExamInfo();
-		conductExam.generateQuestionsAndEvaluate();
+			conductExam.generateQuestionsAndEvaluate();
+		
 		
 
 	}
@@ -36,7 +37,10 @@ public class ConductExam {
 				+ exam.getSubjectName() + " test");
 	}
 
-	public void generateQuestionsAndEvaluate() {
+	public void generateQuestionsAndEvaluate()   {
+		
+			
+		
 		for (int i = 0; i < exam.getTotalNumberOfQuestions(); i++) {
 			num1 = generateRandomNumber();
 			num2 = generateRandomNumber();
@@ -44,7 +48,21 @@ public class ConductExam {
 
 			System.out.println("Question No " + (i + 1));
 			System.out.println(num1 + "+" + num2 + "= ?");
-			result = input.nextInt();
+			try {
+				result = input.nextInt();
+				Thread.sleep(30000);
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println("you have entered  string , please enter only numbers");
+				try {
+					System.out.println("please enter the answer again");
+					result = input.nextInt();
+				} catch (Exception e2) {
+					// TODO: handle exception
+				}
+				
+			}
+			
 			if(evaluateResult()) {
 				System.out.println("Correct Answer");
 			}else {
