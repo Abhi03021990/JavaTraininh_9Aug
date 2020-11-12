@@ -1,0 +1,125 @@
+{
+  "id": "0ea3f8be-bd46-467b-b228-bfc766142243",
+  "version": "2.0",
+  "name": "MyFirstProject",
+  "url": "https://www.bing.com",
+  "tests": [{
+    "id": "b85ad353-057c-4588-9178-9244a62101e2",
+    "name": "BingHomePage",
+    "commands": [{
+      "id": "4e5ad8c9-806c-45ca-b05e-6e689534e794",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18384035-e67a-49f9-8011-dfb4a2d015d9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65392a02-b38c-47d6-94ac-61d1e8182584",
+      "comment": "",
+      "command": "type",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//input[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//form[@id='sb_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "python"
+    }, {
+      "id": "1f08444b-b6ca-422f-b7d6-fb99bf451ecf",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//input[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//form[@id='sb_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8267e0de-d8fa-4186-ade2-747524e6f6dc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.slide:nth-child(5) > .pa_item .b_adsTrunTx",
+      "targets": [
+        ["css=.slide:nth-child(5) > .pa_item .b_adsTrunTx", "css:finder"],
+        ["xpath=//div[@id='slideexp2_D985A7']/div[5]/div/a/div/p/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a/div/p/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d1df214-e1f1-404a-a980-cd96cf1a641e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.slide:nth-child(6) > .pa_item .pa_price",
+      "targets": [
+        ["css=.slide:nth-child(6) > .pa_item .pa_price", "css:finder"],
+        ["xpath=//div[@id='slideexp2_D985A7']/div[6]/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bc6aae1-68e0-45af-887f-3490974935a5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=embD51DB36A4",
+      "targets": [
+        ["id=embD51DB36A4", "id"],
+        ["css=#embD51DB36A4", "css:finder"],
+        ["xpath=//img[@alt='Cucumber']", "xpath:img"],
+        ["xpath=//img[@id='embD51DB36A4']", "xpath:attributes"],
+        ["xpath=//ol[@id='b_context']/li/div/div[3]/div/div[2]/ul/li/div/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad5b550d-216e-4ee1-8b69-5e56ccea9f3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=b_content",
+      "targets": [
+        ["id=b_content", "id"],
+        ["css=#b_content", "css:finder"],
+        ["xpath=//div[@id='b_content']", "xpath:attributes"],
+        ["xpath=//body/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f026acd-c95f-48c5-b10e-120769ef0c1d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=id_sc",
+      "targets": [
+        ["id=id_sc", "id"],
+        ["css=#id_sc", "css:finder"],
+        ["xpath=//a[@id='id_sc']", "xpath:attributes"],
+        ["xpath=//div[@id='id_h']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[4]", "xpath:href"],
+        ["xpath=//header/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3c126962-c637-4486-9553-890abe7c96e3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b85ad353-057c-4588-9178-9244a62101e2"]
+  }],
+  "urls": ["https://www.bing.com/"],
+  "plugins": []
+}
