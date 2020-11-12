@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Code Hub Academy">
-  <test thread-count="1" name="My First Test">
-    <classes>
-      <class name="test.Mytest1"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
